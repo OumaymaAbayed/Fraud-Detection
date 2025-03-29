@@ -28,48 +28,26 @@ The primary objective of this project is to develop a machine learning model tha
 
 * Evaluated clustering performance using silhouette scores and ARI.
 
-Found that clustering did not align well with actual fraud labels.
+* Found that clustering did not align well with actual fraud labels.
 
-Supervised Learning Approach:
+4- Supervised Learning Approach:
 
-Implemented classification models: Logistic Regression, Random Forest, XGBoost.
+* Implemented classification models:
+  * Logistic Regression
+  * Random Forest
+  *  XGBoost
 
 Evaluated models using accuracy, precision, recall, F1-score, confusion matrix, and ROC curve.
 
-Performance Comparison:
+5- Performance Comparison:
 
 Logistic Regression and XGBoost performed the best with 75% accuracy.
 
 Models struggled with detecting the minority class (fraud), highlighting data imbalance issues.
 
-Recommendations:
+6- Recommendations:
 
 Use techniques like SMOTE or class weighting to handle data imbalance.
 
 Experiment with cost-sensitive learning and ensemble methods to improve recall for fraud cases.
 
-Installation
-
-To run the project, ensure you have the following libraries installed:
-
-pip install pandas numpy scikit-learn xgboost seaborn matplotlib imbalanced-learn
-
-Usage
-
-Clone the repository:
-
-git clone https://github.com/yourusername/insurance-fraud-detection.git
-
-Navigate to the project directory:
-
-cd insurance-fraud-detection
-
-Run the Python script:
-
-python fraud_detection.py
-
-Results
-
-The models developed showed moderate success in detecting fraudulent claims.
-
-Further optimization is needed to improve the recall of fraudulent cas
